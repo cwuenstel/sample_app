@@ -1,0 +1,76 @@
+
+PagesController
+  GET 'home'
+    should be successful
+    should have the right title
+  GET 'contact'
+    should be successful
+    should have the right title
+  GET 'about'
+    should be successful
+    should have the right title
+
+UsersController
+  GET 'new'
+    should be successful
+    should have the right title
+
+UsersController
+  GET 'show'
+    should be successful
+    should find the right user
+    should have the right title
+    should include the user's name
+    should have a profile image
+  GET 'new'
+    should be successful
+    should have the right title
+
+UsersHelper
+  add some examples to (or delete) C:/Sites/sample_app/spec/helpers/users_helper_spec.rb (PENDING: Not Yet Implemented)
+
+User
+  should create a new instance given valid attributes
+  should require a name
+  should require an email address
+  should reject names that are too long
+  should accept valid email addresses
+  should reject invalid email addresses
+  should reject duplicate email addresses
+  should reject email addresses identical up to case
+  password validations
+    should require a password
+    should require a matching password confirmation
+    should reject short passwords
+    should reject long passwords
+  password encryption
+    should have an encrypted password attribute
+    should set the encrypted password
+    has_password? method
+      should be true if the passwords match
+      should be false if the passwords don't match
+    authenticate method
+      should return nil on email/password mismatch
+      should return nil for an email address with no user
+      should return the user on email/password match
+
+LayoutLinks
+  should have a Home page at '/'
+  should have a Contact page at '/contact'
+  should have an About page at '/about'
+  should have a Help page at '/help'
+  should have a signup page at '/signup'
+
+users/new.html.erb
+  add some examples to (or delete) C:/Sites/sample_app/spec/views/users/new.html.erb_spec.rb (PENDING: Not Yet Implemented)
+
+Pending:
+  UsersHelper add some examples to (or delete) C:/Sites/sample_app/spec/helpers/users_helper_spec.rb
+    # Not Yet Implemented
+    # ./spec/helpers/users_helper_spec.rb:14
+  users/new.html.erb add some examples to (or delete) C:/Sites/sample_app/spec/views/users/new.html.erb_spec.rb
+    # Not Yet Implemented
+    # ./spec/views/users/new.html.erb_spec.rb:4
+
+Finished in 6.49 seconds
+41 examples, 0 failures, 2 pending
